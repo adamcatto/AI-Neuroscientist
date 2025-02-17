@@ -1,0 +1,3 @@
+NOTE: this was run when the script was one folder level up, therefore we use "../../read_only_sandbox" instead of "../../../read_only_sandbox", as appears in the next trial.
+
+* the agent does not do very well when it messes up. this is because it iterates through tasks in one go, and doesn't utilize any experimentation within-task, such as in EDA: we may want it to try to list all files to read; then, based on that output, determine what files to read and how to do so. However, the agent is incapable of such exploration currently. Thus in the next trial, we should include a task-loop-until-satisfaction, wherein the agent can decide if it has adequately completed the task, and if not, describe its findings thus far and add/run some more cells.

@@ -1,0 +1,1 @@
+This is the first attempt at building an autonomous bioinformatics research agent. See post_mortem.md for an analysis of the run.
